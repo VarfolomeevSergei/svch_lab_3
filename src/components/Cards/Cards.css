@@ -1,0 +1,315 @@
+:root {
+  --var-body: #f9f9f9; 
+  --var-header-bg: #ffffff; 
+  --var-header-text: #333333; 
+  --var-color-red: #e63946;
+  --var-button-bg: #f1faee; 
+  --var-button-hover-bg: #a8dadc; 
+  --var-card-bg: #ffffff; 
+  --var-card-border: #e0e0e0; 
+  --var-card-hover-bg: #f1faee; 
+  --var-text-color: #333333; 
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--var-body);
+}
+
+.reviewsLogo {
+  color: var(--var-color-red);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.3rem; /* Увеличенный размер заголовка */
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+/* input {
+  background-color: transparent;
+  border: 1px solid var(--var-color-red);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.3rem; 
+  margin-bottom: 10px;
+  width: 200px; 
+}
+
+button {
+  background-color: var(--var-color-red);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.1rem;
+} */
+
+button:hover {
+  background-color: var(--var-button-hover-bg); /* Цвет кнопки при наведении */
+}
+
+.card {
+  border: 1px solid var(--var-card-border);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px; /* Более округлые углы */
+  background-color: var(--var-card-bg);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Добавлено увеличение при наведении */
+}
+
+.card:hover {
+  background-color: var(--var-card-hover-bg); /* Цвет карточки при наведении */
+  transform: scale(1.02); /* Легкое увеличение */
+}
+
+.card.selected {
+  background-color: #ffe5b4; /* Цвет выделенной карточки */
+}
+
+h3 {
+  display: block;
+  font-size: 0.3rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  
+  font-size: 0.19rem;
+}
+
+/* 
+.container {
+  width: 100%;
+  text-align: center;
+}
+.reviewsLogo {
+  color: var(--var-color-red);
+  font-family: "Roboto";
+  font-size: 30px;
+  line-height: 28.8px;
+}
+.form {
+  display: inline-flex;
+}
+input {
+  background-color: transparent;
+  border-color: var(--var-color-red);
+}
+button {
+  background-color: var(--var-color-red);
+  border-color: var(--var-color-red);
+  color: white;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card.selected {
+  background-color: wheat;
+}
+
+
+:root {
+  --var-body: rgba(246, 244, 236, 1);
+  --var-shopping-annotation-text: #f1d3b9;
+  --var-header-menu-bg: rgba(246, 244, 236, 1);
+  --var-header-menu-text: #b45f4d;
+  --var-color-red: #b45f4d;
+  --var-themes-color: none;
+  --var-icon-color: transparent;
+  --var-green-menu: #a9ae8d;
+  --var-dae-annotation-bg: #f8f8f8;
+  --var-dae-bg: #f1d3b9;
+  --var-follow-link: #000;
+  --var-footer-bg: #f6f4ec;
+  --var-shop-container: rgba(241, 211, 185, 1);
+  --var-shop-text-color: rgba(129, 58, 58, 0.84);
+  --var-shop-burger: #beab6b;
+  --var-button-color: none;
+  --var-map: rgba(131, 17, 17, 0.486);
+  --var-green-text: #a9ae8d;
+  --var-review-bg: antiquewhite;
+  --var-review-txt: #813a3a;
+  --var-active-pag: #90995f;
+}
+
+h3 {
+  display: block;
+  font-size: 0.3rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  
+  font-size: 0.3rem;
+} */
+
+
+@media (max-width: 634px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+/* 
+.section-four-container {
+  margin: 0 15px;
+  
+}
+
+.section-six-container {
+  margin: 0 15px;
+}
+
+.section-four-card {
+  position: relative;
+  width: 360px;
+  height: 626px;
+  border-radius: 10px;
+  background: #aee8fb;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.four-card-two {
+  background-color: #f3e9e2;
+}
+
+.section-four-card h4 {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.section-four-card img {
+  width: 85.55555%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding-top: 26px;
+  margin-bottom: 20px;
+}
+
+.section-four-teg {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  text-align: start;
+}
+
+.section-four-card-text {
+  line-height: 19.52px; 
+  max-width: 303px;
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.52px; 
+}
+.section-four-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 26px;
+  width: 153px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #aee8fb;
+}
+
+.section-four-button p {
+  color: #000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1120px) {
+  .section-six-card-container {
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .section-six-card {
+    margin: 0 auto;
+  }
+
+  .section-four-card-container {
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  
+
+} */

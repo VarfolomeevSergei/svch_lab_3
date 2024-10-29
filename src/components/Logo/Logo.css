@@ -1,0 +1,14 @@
+.header-logo-container {
+    height: 57px;
+    position: relative;
+  }
+  
+  .header-first-logo {
+    height: 57px;
+    width: 66px;
+  }
+  
+  .header-second-logo {
+    position: absolute;
+    left: 57px;
+  }

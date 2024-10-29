@@ -1,0 +1,199 @@
+
+.section-five {
+    max-width: 1190px;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .section-five span{
+    font-size: 0.5rem;
+  }
+
+  .MuiInputBase-root{
+    margin-bottom: 1.5rem;
+  } 
+  .css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root{
+    font-size: 0.1rem;
+  }
+
+  .css-nwsdb5-MuiFormLabel-root{
+    margin-top: 1rem;
+  }
+.css-81qg8w span{
+  font-size: 0.1rem;
+}
+
+
+  
+  .section-five-container {
+    margin: 0 15px;
+    margin-bottom: 1rem;
+  }
+  
+  .section-five-container img {
+    width: 49.13%;
+    height: auto;
+    background-image: url('../../../public/img/five-container-img.png');
+  }
+  
+  .section-five-right-element {
+    max-width: 570px;
+    max-height: 570px;
+    border-radius: 20px;
+    background: #f3e9e2;
+    font-size: clamp(
+      14px,
+      calc(14px + 30 * ((100vw - 320px) / (1280 - 320))),
+      44px
+    );
+    /* font-size: calc(14px + 30 * ((100vw - 320px) / (1280 - 320))); */
+  }
+  
+  .section-five-right-element p {
+    margin-top: 3.52em;
+    margin-left: 2em;
+    margin-right: 2.52em;
+    text-align: start;
+    color: #000;
+    font-family: Roboto;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2em; /* 120% */
+    max-width: 371px;
+  }
+  
+  .section-five-text-title {
+    max-width: 215px;
+    margin: 0 auto;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    margin-bottom: 74px;
+  }
+  
+  .section-five-inform {
+    margin: 0 15px;
+    width: 97.731%;
+    display: grid;
+    grid-template-columns: 33.2% 1px 33.2% 1px 33.2%;
+  }
+  
+  .border-grid {
+    width: 1px;
+    height: auto;
+    flex-shrink: 0;
+    background: #000;
+  }
+  
+  .section-five-inform div h3 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 71px;
+    padding-top: 15px;
+    margin-bottom: 24px;
+  }
+  
+  .section-five-inform div p {
+    max-width: 185px;
+    margin: 0 auto;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+.section-five-text-title {
+    animation: pulse 4s infinite;
+  }
+
+  
+@media (max-width: 768px) {
+    .section-five-inform {
+      margin: 0 15px;
+      width: 90%;
+      display: grid;
+      grid-template-rows: auto 1px auto 1px auto;
+      grid-template-columns: 1fr;
+    }
+}  
+  
+
+@media (max-width: 500px) {
+    .section-six-card {
+      width: 290px;
+      height: 300px;
+    }
+  
+    .section-six-card h2 {
+      font-size: 35px;
+      line-height: 39px;
+    }
+  
+    .section-six-card p {
+      max-width: 260px;
+      left: 15px;
+    }
+  
+    .footer-section-container {
+      flex-wrap: wrap;
+      row-gap: 60px;
+      max-width: 300px;
+      margin: auto;
+    }
+  
+    .footer-section-left-container {
+      margin: 0;
+    }
+  
+    .footer-section-right-container {
+      margin: 0;
+    }
+  
+    .section-four-card {
+      max-width: 290px;
+    }
+  
+    .section-five-container {
+      flex-wrap: wrap;
+    }
+  
+    .section-five-right-element {
+      padding: 20px;
+      margin: 0;
+    }
+    .section-five-right-element p {
+      padding: 0;
+      margin: 0;
+    }
+  
+    .section-five-container img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .section-five-text-title {
+      margin-bottom: 20px;
+    }
+  
+    .section-four-card-text {
+      max-width: 250px;
+    }
+  
+    .section-six-slide-author {
+      padding-bottom: 50px;
+    }
+  }

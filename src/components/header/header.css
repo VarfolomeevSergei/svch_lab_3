@@ -1,0 +1,200 @@
+html {
+  font-size: clamp(30px, calc(30px + 90 * ((100vw - 320px) / (1280 - 320))), 120px);
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 29px;
+  background-color: white;
+  color: #000;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: clamp(30px, calc(30px + 90 * ((100vw - 320px) / (1280 - 320))), 120px);
+}
+
+main {
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 15px;
+}
+
+.flex-box-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container {
+  margin: 0 auto;
+  padding-top: 12px;
+  max-width: 1180px;
+  padding-bottom: 16px;
+}
+
+
+
+.header-information {
+  width: 535px;
+  padding-top: 27px;
+  background-color: white;
+}
+
+.header-information a {
+  text-decoration: none;
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.header-anchors {
+  display: none;
+}
+
+ /*Стили для контейнера кнопки*/
+ /*
+.lng-theme {
+  margin-left: 4%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}*/
+
+/* Стили для кнопки при наведении */
+/*
+.lng-theme:hover {
+  background-color: #aee8fb;
+}
+  */
+
+/* Стили для активной кнопки */
+/*
+.lng-theme.active {
+  background-color: #333;
+  color: #fff;
+} 
+  */
+
+
+
+
+@media (max-width: 890px) {
+  
+  .lng-theme {
+    /* Стили для кнопки на экранах с шириной меньше 768px */
+    padding: 10px; /* Уменьшаем отступы */
+    font-size: 0; /* Убираем текст */
+    width: 40px; /* Задаем ширину */
+    height: 40px; /* Задаем высоту */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    display: flex; /* Включаем flexbox для позиционирования */
+    align-items: center; /* Выравниваем по центру */
+    justify-content: center; /* Выравниваем по центру */
+  }
+
+  .lng-theme::before {
+    /* Стили для псевдоэлемента before */
+    content: ""; /* Убираем дефолтное содержание */
+    background-image: url("../../../public/img/theme.jpg"); /* Задаем путь к SVG-иконке */
+    background-size: contain; /* Помещаем иконку по размеру */
+    background-repeat: no-repeat; /* Запрещаем повторение иконки */
+    width: 20px; /* Задаем ширину иконки */
+    height: 20px; /* Задаем высоту иконки */
+  }
+  
+
+  .header-information {
+    display: none;
+  }
+
+  .header-button-burger {
+    display: block;
+    margin: auto;
+  }
+
+  .header-button-burger {
+    margin: auto;
+    display: block;
+  }
+
+  .header-information {
+    position: fixed;
+    top: 0px;
+    width: 160px;
+    right: -160px;
+    padding-top: 65px;
+    flex-direction: column;
+    transition: transform 0.5s;
+    z-index: 9;
+  }
+
+  .header-information {
+    color: white;
+    font-size: 16px;
+    display: block;
+  }
+
+  .header-information a {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .header-container.open .header-information {
+    /* transform: translateY(100%); */
+    transform: translateX(-100%);
+  }
+  /* .header-container.open .header-button-burger span {
+    background-color: white;
+  } */
+
+  .header-container.open .header-button-burger span:nth-child(1) {
+    transform: translate(-50%, 0) rotate(45deg);
+  }
+  .header-container.open .header-button-burger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header-container.open .header-button-burger span:nth-child(3) {
+    transform: translate(-50%, 0) rotate(-45deg);
+  }
+
+  .header-container.open .blackOver {
+    display: block;
+    border: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    background: #0000005e;
+    left: 0;
+    top: 0;
+    z-index: 8;
+  }
+
+  body.body-scroll {
+    overflow: hidden;
+  }
+
+  .header-anchors {
+    display: block;
+  }
+}
